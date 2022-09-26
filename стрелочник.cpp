@@ -9,10 +9,7 @@ int main() {
   cout << "Game started" << endl;
 
   while (key_control != '/r') {
-
-
     key_control = getche();
-
     switch(key_control){
       case 'w':
         cout << " up ";
