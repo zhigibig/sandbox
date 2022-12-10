@@ -23,16 +23,6 @@ def array_diff(a, b):
 
     a, b = map(del_same_el_from_list, [a, b])
     
-    
+    c = [i for i in a if not(i in b)]
 
-    return [a, b]
-
-def main():
-
-    print(array_diff([1, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 4, 5], [4, 4, 4, 4, 4, 5, 6, 7]))
-
-    return 0
-
-
-if __name__ == '__main__':
-    main()
+    return c
